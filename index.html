@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Heap Leach Ledger · PlantOS (concept demo)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="sitenav">
+  <img src="assets/mariana-logo.png" alt="Mariana Minerals" class="logo">
+  <nav>
+    <a href="#">MINEOS</a>
+    <a href="#" class="on">PLANTOS <i data-lucide="chevron-down"></i></a>
+    <a href="#">CAPITALPROJECTOS</a>
+    <a href="#">MONITOR</a>
+    <a href="#">DOCS</a>
+    <a href="#" class="cta">COPPER ONE</a>
+  </nav>
+</header>
+<div class="ticker"><div class="track" id="ticker"></div></div>
+<div class="apphdr">
+  <div class="brand"><div class="tile"><i data-lucide="layers"></i></div><div><div class="t">Heap Leach Ledger</div><div class="s">PlantOS · Copper One · Pad 2</div></div>
+    <span class="live"><i data-lucide="radio"></i>LIVE</span></div>
+  <div class="counters" id="counters"></div>
+  <i data-lucide="sun" class="sun"></i>
+</div>
+<div class="app">
+  <aside class="side">
+    <div class="tabs" id="sideTabs">
+      <button data-t="modules" class="on"><i data-lucide="list"></i>Modules</button>
+      <button data-t="samples"><i data-lucide="flask-conical"></i>Samples</button>
+      <button data-t="plan"><i data-lucide="route"></i>Plan</button>
+      <button data-t="filters"><i data-lucide="filter"></i>Filters</button>
+    </div>
+    <div class="search"><i data-lucide="search"></i><input id="q" placeholder="Search modules..."></div>
+    <div id="sideList" class="list"></div>
+  </aside>
+  <main class="canvas" id="canvas">
+    <div class="seg" id="seg">
+      <button data-v="map" class="on"><i data-lucide="map"></i>Map</button>
+      <button data-v="attr"><i data-lucide="chart-area"></i>Attribution</button>
+      <button data-v="plan"><i data-lucide="route"></i>Plan</button>
+    </div>
+    <section id="view"></section>
+    <div class="foot">Unofficial concept demo by Mohith Gajjela. Not affiliated with Mariana Minerals. Synthetic data.</div>
+  </main>
+</div>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script src="data/pad.js"></script>
+<script src="data/calibration.js"></script>
+<script type="module" src="app.js"></script>
+</body>
+</html>

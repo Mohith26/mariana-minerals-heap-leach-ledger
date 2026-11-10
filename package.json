@@ -1,0 +1,1 @@
+{ "name": "mariana-minerals-heap-leach-ledger", "private": true, "type": "module", "scripts": { "test": "node --test tests/leach.test.mjs", "gen": "node scripts/gen_pad.mjs", "run": "node scripts/run.mjs", "calibrate": "node scripts/calibrate.mjs 100" } }
